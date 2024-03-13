@@ -12,6 +12,7 @@
     "homepage": "https://github.com/:lc:vendor/:lc:package",
     "keywords": ["Laravel", ":uc:package"],
     "require": {
+        "php": "^8.2",
         "illuminate/support": "~9"
     },
     "require-dev": {
