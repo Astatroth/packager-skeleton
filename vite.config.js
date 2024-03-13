@@ -5,8 +5,6 @@ import vue from '@vitejs/plugin-vue2';
 export default defineConfig({
     plugins: [
         laravel({
-            /*buildDirectory: './public',
-            hotFile: './public/hot',*/
             input: [
                 './resources/js/datatable.js',
                 './resources/css/datatable.scss'
