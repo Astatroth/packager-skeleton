@@ -2,9 +2,9 @@
 
 namespace :uc:vendor\:uc:package;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
-class ServiceProvider extends ServiceProvider
+class ServiceProvider extends BaseServiceProvider
 {
     /**
      * Perform post-registration booting of services.
