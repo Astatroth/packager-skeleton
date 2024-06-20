@@ -28,12 +28,5 @@
         "psr-4": {
             ":uc:vendor\\:uc:package\\Tests\\": "tests"
         }
-    },
-    "extra": {
-        "laravel": {
-            "providers": [
-                ":uc:vendor\\:uc:package\\ServiceProvider"
-            ]
-        }
     }
 }

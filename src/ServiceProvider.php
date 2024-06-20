@@ -2,10 +2,11 @@
 
 namespace :uc:vendor\:uc:package;
 
+use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 
-class ServiceProvider extends BaseServiceProvider
+class ServiceProvider extends BaseServiceProvider implements DeferrableProvider
 {
     /**
      * Perform post-registration booting of services.
