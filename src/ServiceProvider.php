@@ -4,6 +4,7 @@ namespace :uc:vendor\:uc:package;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
+
 class ServiceProvider extends BaseServiceProvider
 {
     /**
