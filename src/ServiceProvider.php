@@ -4,7 +4,7 @@ namespace :uc:vendor\:uc:package;
 
 use Illuminate\Support\ServiceProvider;
 
-class :uc:packageServiceProvider extends ServiceProvider
+class ServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
