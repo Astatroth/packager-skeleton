@@ -2,10 +2,10 @@
 
 namespace :uc:vendor\:uc:package;
 
-use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
 
-class ServiceProvider extends BaseServiceProvider
+class PackageServiceProvider extends ServiceProvider
 {
     /**
      * Perform post-registration booting of services.
@@ -14,8 +14,8 @@ class ServiceProvider extends BaseServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:vendor');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:vendor');
+        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', ':lc:package');
+        // $this->loadViewsFrom(__DIR__.'/../resources/views', ':lc:package');
         // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         // $this->loadRoutesFrom(__DIR__.'/routes.php');
 
@@ -65,17 +65,17 @@ class ServiceProvider extends BaseServiceProvider
 
         // Publishing the views.
         /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/:lc:vendor'),
+            __DIR__.'/../resources/views' => base_path('resources/views/vendor/:lc:package'),
         ], ':lc:package.views');*/
 
         // Publishing assets.
         /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/:lc:vendor'),
+            __DIR__.'/../resources/assets' => public_path('vendor/:lc:package'),
         ], ':lc:package.assets');*/
 
         // Publishing the translation files.
         /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/:lc:vendor'),
+            __DIR__.'/../resources/lang' => resource_path('lang/vendor/:lc:package'),
         ], ':lc:package.lang');*/
 
         // Registering package commands.
