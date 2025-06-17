@@ -61,22 +61,27 @@ class PackageServiceProvider extends ServiceProvider
         // Publishing the configuration file.
         /*$this->publishes([
             __DIR__.'/../config/:lc:package.php' => config_path(':lc:package.php'),
-        ], ':lc:package.config');*/
+        ], 'package-config');*/
 
         // Publishing the views.
         /*$this->publishes([
             __DIR__.'/../resources/views' => base_path('resources/views/vendor/:lc:package'),
-        ], ':lc:package.views');*/
+        ], 'package-views');*/
 
         // Publishing assets.
         /*$this->publishes([
             __DIR__.'/../resources/assets' => public_path('vendor/:lc:package'),
-        ], ':lc:package.assets');*/
+        ], 'package-assets');*/
+
+        // Publishing components
+        /*$this->publishes([
+            __DIR__.'/../resources/js/components' => resource_path('vendor/:lc:package'),
+        ], 'package-components');*/
 
         // Publishing the translation files.
         /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/:lc:package'),
-        ], ':lc:package.lang');*/
+            __DIR__.'/../resources/lang' => lang_path('vendor/:lc:package'),
+        ], 'package-lang');*/
 
         // Registering package commands.
         // $this->commands([]);
